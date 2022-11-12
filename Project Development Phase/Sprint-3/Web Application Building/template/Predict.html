@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/style.css"></a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+    
+</head>
+<body>
+    <div class="topnav">
+        <p>Chronic Kidney Disease Prediction</p>
+    </div>
+    <form class="container" action="result" method="post">
+      <div class="container-items">
+      <input type="text" placeholder="Enter Blood Urea" name="bu"><br>
+      <input type="text" placeholder="Enter Blood Glucose Random" name="bgr"><br>
+      
+    </div>
+      <div class="container-items">
+      <select name="cad" id="lang">
+        <option value="#">Coronary Artery Disease</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <select name="ane" id="lang">
+        <option value="#">Anemia</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <select name="pc" id="lang">
+        <option value="#">PC</option>
+        <option value="1">Normal</option>
+        <option value="0">Abnormal</option>
+      </select>
+
+      <select name="rbc" id="lang">
+        <option value="">Red Blood Cells</option>
+        <option value="1">Normal</option>
+        <option value="0">Abnormal</option>
+      </select>
+      </div>
+    
+      <div class="container-items">
+        <select name="dm" id="lang">
+          <option value="#">DiabetesMellitus</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+        </div>
+      
+
+          <div class="container-items">
+            <select name="pe" id="lang">
+              <option value="#">Pedal Edema</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            </div>
+
+
+          <input type="submit" value="Predict">
+</form>
+    
+</body>
+</html>
